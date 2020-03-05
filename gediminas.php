@@ -1,1 +1,0 @@
-Gediminas test kodas

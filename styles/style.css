@@ -15,7 +15,16 @@
 
 
 
-/* Vardas3 stiliaus kodas: */
+/* Jurga stiliaus kodas: */
+div.vspace{
+
+  padding-top: 25px;
+}
+div.bookinfo{
+ border-style: double; 
+ border-color: black;
+}
+
 
 
 

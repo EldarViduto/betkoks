@@ -22,4 +22,7 @@
 
 
 
-/* Vardas4 script kodas: */
+/* Eldar script kodas: */
+$(document).ready(function() {
+    $('input#input_text, textarea#textarea2').characterCounter();
+  });

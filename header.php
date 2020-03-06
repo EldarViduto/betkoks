@@ -19,7 +19,7 @@
   <nav class="container">
     <a href="index.php" class="brand-logo">Logo</a>
     <ul class="right hide-on-med-and-down">
-      <li><a target="_blank" href="user.php"><i class="material-icons right">account_box</i>Your name</a></li>
+      <li><a href="user.php"><i class="material-icons right">account_box</i>Your name</a></li>
     </ul>
     <div class="nav-wrapper container">
       <form>

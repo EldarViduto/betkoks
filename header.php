@@ -18,6 +18,7 @@
 <body>
 
 <nav class="container">
+<a href="#!" class="brand-logo">Logo</a>
     <div class="nav-wrapper container">
       <form>
         <div class="input-field">

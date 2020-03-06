@@ -1,7 +1,7 @@
 <?php include "header.php" ?>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-<body>
+
 
 
     <div class="col s12 m4 left-align container vspace ">
@@ -41,7 +41,7 @@
         </div>
     </div>
 
-</body>
+
 
 
 

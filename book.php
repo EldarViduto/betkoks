@@ -3,7 +3,7 @@
 
 <body>
     
-<div class=" col s12 s4 center-align">
+<div class=" col s12 s4 center-align" width="460" height="345">
 <img src="images/9786094840869.jpg">
     <h3>Barbora Radvilaitė</h3>
   <h4>Aprašymas</h4>

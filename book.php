@@ -4,7 +4,7 @@
 <body>
     
 <div class=" col s12 s4 center-align">
-<img src="9786094840869.jpg">
+<img src="image_2342.jpg">
     <h3>Barbora Radvilaitė</h3>
   <h4>Aprašymas</h4>
  <p align="justify">Turbūt visi sutinka, kad pati žymiausia visų laikų lietuvė yra Barbora Radvilaitė. Nuo jos gimimo dienos praėjo jau penki šimtai metų, o moters asmenybė vis dar nepamiršta. Priešingai – Barbora apipinta keisčiausias gandais, legendomis, neįtikėtinomis istorijomis apie jos gyvenimą, meilę Žygimantui Augustui bei paslaptingą mirtį. Lenkų istorikas Zbigniew Kuchowicz penkių šimtų puslapių knygoje „Barbora Radvilaitė“ dalinasi savo provokuojančiu tyrimu apie legendinės asmenybės gyvenimą.

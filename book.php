@@ -2,8 +2,8 @@
 <?php include "header.php" ?>
 
 <body>
-    
-<div class=" col s12 s4 center-align" width="460" height="345">
+   
+<div class=" col s12 s4 center-align" width="100" height="200">
 <img src="images/9786094840869.jpg">
     <h3>Barbora Radvilaitė</h3>
   <h4>Aprašymas</h4>

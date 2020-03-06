@@ -14,7 +14,7 @@
     </div class="cols2 right">
     <br><br><br><br>
     <div class="right">
-      <a href="#">Register</a>
+      <a href="register.php">Register</a>
       <button class="btn">LOGIN</button>
     </div>
   </div>
@@ -46,29 +46,29 @@
 
     <div class="row center-align">
       <div class="col s3">
-        <img src="https://picsum.photos/seed/1/200/300" alt="">
+        <a href="book.php"><img src="https://picsum.photos/seed/1/200/300" alt=""></a>
         <p>Knygos pavadinimas</p>
-        <button>NORIU!</button>
+        <a  href="book.php"><button>NORIU!</button></a>
       </div>
       <div class="col s3">
-        <img src="https://picsum.photos/seed/2/200/300" alt="">
+        <a href="book.php"><img src="https://picsum.photos/seed/2/200/300" alt=""></a>
         <p>Knygos pavadinimas2</p>
-        <button>NORIU!</button>
+        <a href="book.php"><button>NORIU!</button></a>
       </div>
       <div class="col s3">
-        <img src="https://picsum.photos/seed/3/200/300" alt="">
+        <a href="book.php"><img src="https://picsum.photos/seed/3/200/300" alt=""></a>
         <p>Knygos pavadinimas3</p>
-        <button>NORIU!</button>
+        <a href="book.php"><button>NORIU!</button></a>
       </div>
       <div class="col s3">
-        <img src="https://picsum.photos/seed/4/200/300" alt="">
+        <a href="book.php"><img src="https://picsum.photos/seed/4/200/300" alt=""></a>
         <p>Knygos pavadinimas4</p>
-        <button>NORIU!</button>
+        <a href="book.php"><button>NORIU!</button></a>
       </div>
       <div class="col s3">
-        <img src="https://picsum.photos/seed/5/200/300" alt="">
+        <a href="book.php"><img src="https://picsum.photos/seed/5/200/300" alt=""></a>
         <p>Knygos pavadinimas5</p>
-        <button>NORIU!</button>
+        <a href="book.php"><button>NORIU!</button></a>
       </div>
     </div>
   </div>

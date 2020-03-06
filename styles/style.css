@@ -22,3 +22,17 @@
 
 
 /* Eldar stiliaus kodas: */
+p.flow-text {
+  margin-top: 0;
+}
+div.col.s3 {
+  margin-top: 12px;
+}
+div.col.s3 p {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+div.col.s3 button {
+  margin-top: 0;
+  margin-bottom: 10px;
+}

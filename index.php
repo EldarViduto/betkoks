@@ -3,6 +3,7 @@
 <main class="container">
 
   <div class="row">
+    <h2 class="col s6">RENT YOUR BOOK</h2>
     <div class="input-field col s2 right">
       <input id="first_name" type="text" class="validate">
       <label for="first_name">Password</label>
@@ -19,7 +20,8 @@
   </div>
 
   <div class="row">
-    <div class="col s12 m6 l3">
+    <div class="col s12 m6 l3 center-align">
+      <p class="flow-text">Choose genre:</p>
       <ul class="sidebox-border flow-text">
         <li>
           <a href="#">Zanras1</a>
@@ -63,7 +65,7 @@
         <p>Knygos pavadinimas4</p>
         <button>NORIU!</button>
       </div>
-      <div class="col s4">
+      <div class="col s3">
         <img src="https://picsum.photos/seed/5/200/300" alt="">
         <p>Knygos pavadinimas5</p>
         <button>NORIU!</button>

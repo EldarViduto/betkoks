@@ -40,6 +40,34 @@
       </li>
     </ul>
   </div>
+
+  <div class="row">
+    <div class="col s4">
+      <img src="https://picsum.photos/seed/1/200/300" alt="">
+      <p>Knygos pavadinimas</p>
+      <button>NORIU!</button>
+    </div>
+    <div class="col s4">
+      <img src="https://picsum.photos/seed/2/200/300" alt="">
+      <p>Knygos pavadinimas2</p>
+      <button>NORIU!</button>
+    </div>
+    <div class="col s4">
+      <img src="https://picsum.photos/seed/3/200/300" alt="">
+      <p>Knygos pavadinimas3</p>
+      <button>NORIU!</button>
+    </div>
+    <div class="col s4">
+      <img src="https://picsum.photos/seed/4/200/300" alt="">
+      <p>Knygos pavadinimas4</p>
+      <button>NORIU!</button>
+    </div>
+    <div class="col s4">
+      <img src="https://picsum.photos/seed/5/200/300" alt="">
+      <p>Knygos pavadinimas5</p>
+      <button>NORIU!</button>
+    </div>
+  </div>
 </main>
 
 

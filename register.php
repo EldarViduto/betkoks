@@ -36,7 +36,7 @@
 
             
             <div class="col s6">
-                <a href="#"><img src="images/user_img.jpg" alt="#"></a>
+                <!-- <a href="#"><img src="images/user_img.jpg" alt="#"></a> -->
                 <a href="https://picsum.photos/seed/2/200/3000"><button>Foto</button></a>
             </div>
         </div>

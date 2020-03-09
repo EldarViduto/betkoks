@@ -16,9 +16,9 @@
         </div>
 
         <div class="row">
-            <div class="input-field col s6">
-                <input id="user" type="text" class="validate">
-                <label for="user">Vartotojo vardas</label>
+        <div class="input-field col s6">
+                <input id="email" type="email" class="validate">
+                <label for="email">El. paštas</label>
             </div>
 
             <div class="input-field col s6">
@@ -29,12 +29,7 @@
 
 
         <div class="row">
-            <div class="input-field col s6">
-                <input id="email" type="email" class="validate">
-                <label for="email">El. paštas</label>
-            </div>
-
-            
+                       
             <div class="col s6">
                 <!-- <a href="#"><img src="images/user_img.jpg" alt="#"></a> -->
                 <a href="https://picsum.photos/seed/2/200/3000"><button>Foto</button></a>

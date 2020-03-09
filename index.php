@@ -41,24 +41,22 @@ if ($conn->connect_error) {
     <div class="col s12 m6 l3 center-align">
       <p class="flow-text">Choose genre:</p>
       <ul class="sidebox-border flow-text">
-        <li>
-          <a href="#">Zanras1</a>
-        </li>
-        <li>
-          <a href="#">Zanras2</a>
-        </li>
-        <li>
-          <a href="#">Zanras3</a>
-        </li>
-        <li>
-          <a href="#">Zanras4</a>
-        </li>
-        <li>
-          <a href="#">Zanras5</a>
-        </li>
-        <li>
-          <a href="#">Zanras6</a>
-        </li>
+        <?php
+
+        $sql = "SELECT * FROM book_info";
+
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+          // output data of each row
+          while ($row = $result->fetch_assoc()) {
+            echo '<li><a href="#">' . $row["book_genre"] . '</a></li>';
+          }
+        } else {
+          echo "0 results";
+        }
+
+        ?>
       </ul>
     </div>
 

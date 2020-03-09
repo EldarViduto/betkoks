@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 <?php
 include "conn.php";
 ?>
 
-=======
->>>>>>> 9aaa23c34276c11d57e528550a977e525a81b682
 
 <!DOCTYPE html>
 <html lang="en">

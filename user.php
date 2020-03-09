@@ -17,6 +17,19 @@
                 <p>EL.PAŠTAS: katiniukas@gmail.com</p>
 
             </div>
+            <div>
+                <ul class="col s4 collapsible">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">announcement</i>Nauja žinutė</div>
+                        <div class="collapsible-body"><span>Nauja žinutė: Nuo vvv</span></div>
+                    </li>
+
+                </ul>
+            </div>
+
+
+
+
         </div>
         <h5 class=blue>Mano knygos</h5>
 
@@ -30,10 +43,10 @@
                 <!-- Switch -->
                 <div class="switch">
                     <label>
-                        Off
+                        off
                         <input type="checkbox">
                         <span class="lever"></span>
-                        On
+                        on
                     </label>
                 </div>
 
@@ -46,34 +59,86 @@
                 <img src="https://picsum.photos/seed/11/200/300" alt="">
                 <p>Knygos pavadinimas</p>
                 <p>Knygos statusas</p>
+                <!-- Switch -->
+                <div class="switch">
+                    <label>
+                        off
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        on
+                    </label>
+                </div>
 
-                <button>Keisti statusą</button>
+
+                <button>Išsiųsti knygą</button>
             </div>
             <div class="col s3">
                 <img src="https://picsum.photos/seed/12/200/300" alt="">
                 <p>Knygos pavadinimas</p>
                 <p>Knygos statusas</p>
-                <button>Keisti statusą</button>
+
+                <!-- Switch -->
+                <div class="switch">
+                    <label>
+                        off
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        on
+                    </label>
+                </div>
+
+                <button>Išsiųsti knygą</button>
 
             </div>
             <div class="col s3">
                 <img src="https://picsum.photos/seed/18/200/300" alt="">
                 <p>Knygos pavadinimas</p>
                 <p>Knygos statusas</p>
-                <button>Keisti statusą</button>
+                <!-- Switch -->
+                <div class="switch">
+                    <label>
+                        off
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        on
+                    </label>
+                </div>
+
+                <button>Išsiųsti knygą</button>
             </div>
             <div class="col s3">
                 <img src="https://picsum.photos/seed/19/200/300" alt="">
                 <p>Knygos pavadinimas</p>
                 <p>Knygos statusas</p>
-                <button>Keisti statusą</button>
+
+                <!-- Switch -->
+                <div class="switch">
+                    <label>
+                        off
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        on
+                    </label>
+                </div>
+                <button>Išsiųsti knygą</button>
             </div>
             <div class="col s3">
                 <img src="https://picsum.photos/seed/20/200/300" alt="">
                 <p>Knygos pavadinimas</p>
                 <p>Knygos statusas</p>
-                <button>Keisti statusą</button>
+                <!-- Switch -->
+                <div class="switch">
+                    <label>
+                        off
+                        <input type="checkbox">
+                        <span class="lever"></span>
+                        on
+                    </label>
+                </div>
+                <button>Išsiųsti knygą</button>
             </div>
+
+
         </div>
 
     </div>

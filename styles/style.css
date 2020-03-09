@@ -18,13 +18,25 @@
 /* Jurga stiliaus kodas: */
 div.vspace{
 
-  padding-top: 25px;
+  padding-top: 30px;
+  padding-bottom: 25px;
 }
 div.bookinfo{
+  font-weight: bold;
  border-style: double; 
  border-color: black;
+ background-color: cornsilk;
+ padding-bottom: 25px;
 }
+.book_des {font-weight: bold;}
 
+.checked {
+  color: orange;
+}
+div.brief{
+  font-weight: bold;
+  padding-top: 25px;
+}
 
 /* Gediminas stiliaus kodas: */
 

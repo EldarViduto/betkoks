@@ -10,8 +10,7 @@
 
 
 
-/* Vardas2 script kodas: */
-
+/* Jurga script kodas: */
 
 
 

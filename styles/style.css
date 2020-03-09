@@ -11,7 +11,7 @@
 
 /* Julija stiliaus kodas: */
 
-div.col.s3 button {
+.book-list div.col.s3 button {
   margin-top: 30px;
   margin-bottom: 10px;
 }

@@ -1,23 +1,5 @@
 <?php include "header.php" ?>
 
-<?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "books";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
-//echo "Prisijungimas yra geras!<br><br>";
-?>
-
-
-
 <main class="container">
 
   <div class="row">
@@ -55,7 +37,6 @@ if ($conn->connect_error) {
         } else {
           echo "0 results";
         }
-
         ?>
       </ul>
     </div>

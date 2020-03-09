@@ -1,5 +1,23 @@
 <?php include "header.php" ?>
 
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "books";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+//echo "Prisijungimas yra geras!<br><br>";
+?>
+
+
+
 <main class="container">
 
   <div class="row">
@@ -45,31 +63,28 @@
     </div>
 
     <div class="row center-align">
-      <div class="col s3">
-        <a href="book.php"><img src="https://picsum.photos/seed/1/200/300" alt=""></a>
-        <p>Knygos pavadinimas</p>
-        <a  href="book.php"><button>NORIU!</button></a>
-      </div>
-      <div class="col s3">
-        <a href="book.php"><img src="https://picsum.photos/seed/2/200/300" alt=""></a>
-        <p>Knygos pavadinimas2</p>
-        <a href="book.php"><button>NORIU!</button></a>
-      </div>
-      <div class="col s3">
-        <a href="book.php"><img src="https://picsum.photos/seed/3/200/300" alt=""></a>
-        <p>Knygos pavadinimas3</p>
-        <a href="book.php"><button>NORIU!</button></a>
-      </div>
-      <div class="col s3">
-        <a href="book.php"><img src="https://picsum.photos/seed/4/200/300" alt=""></a>
-        <p>Knygos pavadinimas4</p>
-        <a href="book.php"><button>NORIU!</button></a>
-      </div>
-      <div class="col s3">
-        <a href="book.php"><img src="https://picsum.photos/seed/5/200/300" alt=""></a>
-        <p>Knygos pavadinimas5</p>
-        <a href="book.php"><button>NORIU!</button></a>
-      </div>
+      <?php
+
+      $sql = "SELECT * FROM book_info";
+
+      $result = $conn->query($sql);
+
+      if ($result->num_rows > 0) {
+        // output data of each row
+        while ($row = $result->fetch_assoc()) {
+          echo '<div class="col s3">';
+          echo '<a href="book.php"><img class="responsive-img aukstis" src="' . $row["book_img"] . '" alt=""></a>';
+          echo '<p>' . $row["book_name"] . '</p>';
+          echo '<a href="book.php"><button>NORIU!</button></a>';
+          echo '</div>';
+        }
+      } else {
+        echo "0 results";
+      }
+      $conn->close();
+
+      ?>
+
     </div>
   </div>
   <ul class="pagination center-align">

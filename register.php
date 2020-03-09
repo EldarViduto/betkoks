@@ -16,40 +16,31 @@
         </div>
 
         <div class="row">
-            <div class="input-field col s6">
-                <input id="user" type="text" class="validate">
-                <label for="user">Vartotojo vardas</label>
+        <div class="input-field col s6">
+                <input id="email" type="email" class="validate">
+                <label for="email">El. paštas</label>
             </div>
-        </div>
 
-        <div class="row">
             <div class="input-field col s6">
                 <input id="password" type="password" class="validate">
                 <label for="password">Slaptažodis</label>
             </div>
         </div>
 
+
         <div class="row">
-            <div class="input-field col s6">
-                <input id="email" type="email" class="validate">
-                <label for="email">El. paštas</label>
+                       
+            <div class="col s6">
+                <!-- <a href="#"><img src="images/user_img.jpg" alt="#"></a> -->
+                <a href="https://picsum.photos/seed/2/200/3000"><button>Foto</button></a>
             </div>
-        </div>
-
-
-        <div class="row">
-            
-            <a href="https://picsum.photos/seed/2/200/3000"><button>Foto</button></a>
-            <!-- <div class="col s6">
-                <a href="#"><img src="images/user_img.jpg" alt="#"></a>
-            </div> -->
         </div>
 
     </form>
 
     <a href="user.php">
         
-    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <button class="btn waves-effect waves-light" type="submit" name="action">Patvirtinti
         <i class="material-icons right">send</i>
     </button>
 

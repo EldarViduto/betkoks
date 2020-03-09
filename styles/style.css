@@ -15,6 +15,17 @@
 
 
 
+/* Jurga stiliaus kodas: */
+div.vspace{
+
+  padding-top: 25px;
+}
+div.bookinfo{
+ border-style: double; 
+ border-color: black;
+}
+
+
 /* Gediminas stiliaus kodas: */
 
 /* .foto  {

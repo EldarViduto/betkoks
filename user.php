@@ -29,11 +29,13 @@
 
 
 
+        <div class= "row">
+            <h5 class= "col s8"> MANO KNYGOS </h5>
+            <button class="col s4">Pridėti naują knygą</button>
 
         </div>
-        <h5 class=blue>Mano knygos</h5>
 
-        <div class="row center-align">
+        <div class=" book-list row center-align">
 
             <div class="col s3">
                 <img src="https://picsum.photos/seed/10/200/300" alt="">
@@ -44,7 +46,7 @@
                 <div class="switch">
                     <label>
                         off
-                        <input type="checkbox">
+                        <input type="checkbox" checked>
                         <span class="lever"></span>
                         on
                     </label>
@@ -63,7 +65,7 @@
                 <div class="switch">
                     <label>
                         off
-                        <input type="checkbox">
+                        <input type="checkbox" checked>
                         <span class="lever"></span>
                         on
                     </label>
@@ -81,7 +83,7 @@
                 <div class="switch">
                     <label>
                         off
-                        <input type="checkbox">
+                        <input type="checkbox" checked>
                         <span class="lever"></span>
                         on
                     </label>
@@ -98,7 +100,7 @@
                 <div class="switch">
                     <label>
                         off
-                        <input type="checkbox">
+                        <input type="checkbox" checked>
                         <span class="lever"></span>
                         on
                     </label>
@@ -115,7 +117,7 @@
                 <div class="switch">
                     <label>
                         off
-                        <input type="checkbox">
+                        <input type="checkbox" checked>
                         <span class="lever"></span>
                         on
                     </label>
@@ -130,7 +132,7 @@
                 <div class="switch">
                     <label>
                         off
-                        <input type="checkbox">
+                        <input type="checkbox" checked>
                         <span class="lever"></span>
                         on
                     </label>

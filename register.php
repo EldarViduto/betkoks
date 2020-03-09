@@ -8,14 +8,14 @@
 
     if (isset($_GET["name"]) && $_GET["name"] != "") {
 
-
-        $name = $_GET["user_name"];
-        $surname = $_GET["user_surname"];
+        $Vardas = $_GET["user_name"];
+        $Pavardė = $_GET["user_surname"];
         $email = $_GET["user_email"];
-        $pasword = $_GET["user_pasword"];
+        $password = $_GET["user_password"];
+       
 
         $sql = "INSERT INTO user_info (user_name, user_surname, user_email, user_pasword)
-        VALUES ('$name', '$surname', '$email', '$pasword')";
+        VALUES ('$Vardas', '$Pavardė', '$email', '$password')";
 
 
         if ($conn->query($sql) === true) {

@@ -1,9 +1,7 @@
 <?php include "header.php" ?>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="css/bootstrap.css" rel="stylesheet"/>
-<link href="css/font-awesome.css" rel="stylesheet"/>
-<link href="css/rating.css" rel="stylesheet"/>
+
 
 <div class="left-align container vspace ">
 
@@ -24,24 +22,29 @@
 
 
 
-
         </div>
+
         <div class="col s12 m4 center-align">
-            
+
             <button class="btn waves-effect waves-light" type="NORIU" name="action">NORIU
                 <i class="material-icons right">send</i>
             </button>
+            <div class="vertinimas" >
             <P class="feedback">Įvertinkite knygą</P>
 
-            
-                        
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
 
-
-
-                <a href="tekstai/BarboraRadvilaite.pdf">Skaitykite ištrauką</a>
+            <br>
             </div>
+
+            <a href="tekstai/BarboraRadvilaite.pdf">Skaitykite ištrauką</a>
         </div>
     </div>
+
 
 
 

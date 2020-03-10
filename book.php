@@ -70,7 +70,7 @@
 
 
         <p>
-            <font size="3">Turbūt visi sutinka, kad pati žymiausia visų laikų lietuvė yra Barbora Radvilaitė. Nuo jos gimimo dienos praėjo jau penki šimtai metų, o moters asmenybė vis dar nepamiršta. Priešingai – Barbora apipinta keisčiausias gandais, legendomis, neįtikėtinomis istorijomis apie jos gyvenimą, meilę Žygimantui Augustui bei paslaptingą mirtį. Lenkų istorikas Zbigniew Kuchowicz penkių šimtų puslapių knygoje „Barbora Radvilaitė“ dalinasi savo provokuojančiu tyrimu apie legendinės asmenybės gyvenimą.
+            <font size="3">Turbūt visi sutinka, kad pati žymiausia visų laikų lietuvė yra Barbora Radvilaitė. Nuo jos gimimo dienos praėjo jau penki šimtai metų, o moters asmenybė vis dar nepamiršta. Priešingai – Barbora apipinta keisčiausias gandais, legendomis, neįtikėtinomis istorijomis apie jos gyvenimą, meilę Žygimantui Augustui bei paslaptingą mirtį. Lenkų istorikas Zbigniew Kuchowicz penkių šimtų puslapių knygoje „Barbora Radvilaitė“ dalinasi savo provokuojančiu tyrimu apie legendinės asmenybės gyvenimą.
                 Barboros Radvilaitės vardu vadiname miestų gatves, apie šią moterį statomi filmai, spektakliai, rašomos knygos.
 
                 <br>
@@ -82,6 +82,7 @@
 
 </div>
 </div>
+
 
 
 

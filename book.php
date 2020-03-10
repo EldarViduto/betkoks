@@ -11,11 +11,15 @@
         </div>
         <div class="bookinfo col s12 m4  center-align">
 
+        <?php 
+        if (isset($_GET["id"]) && $_GET["id"] != "")
+
+        $id = $_GET["id"];
 
 
+        $sql = "SELECT * FROM book_info WHERE id=$id";
 
-
-
+        ?>
 
             <P>
                 <font size="4">Knygos autorius <font>
@@ -36,16 +40,16 @@
             <button class="btn waves-effect waves-light" type="NORIU" name="action">NORIU
                 <i class="material-icons right">send</i>
             </button>
-            <div class="vertinimas">
-                <P class="feedback">Įvertinkite knygą</P>
+            <div class="vertinimas" >
+            <P class="feedback">Įvertinkite knygą</P>
 
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
 
-                <br>
+            <br>
             </div>
 
             <a href="tekstai/BarboraRadvilaite.pdf">Skaitykite ištrauką</a>
@@ -66,7 +70,7 @@
 
 
         <p>
-            <font size="3">Turbūt visi sutinka, kad pati žymiausia visų laikų lietuvė yra Barbora Radvilaitė. Nuo jos gimimo dienos praėjo jau penki šimtai metų, o moters asmenybė vis dar nepamiršta. Priešingai – Barbora apipinta keisčiausias gandais, legendomis, neįtikėtinomis istorijomis apie jos gyvenimą, meilę Žygimantui Augustui bei paslaptingą mirtį. Lenkų istorikas Zbigniew Kuchowicz penkių šimtų puslapių knygoje „Barbora Radvilaitė“ dalinasi savo provokuojančiu tyrimu apie legendinės asmenybės gyvenimą.
+            <font size="3">Turbūt visi sutinka, kad pati žymiausia visų laikų lietuvė yra Barbora Radvilaitė. Nuo jos gimimo dienos praėjo jau penki šimtai metų, o moters asmenybė vis dar nepamiršta. Priešingai – Barbora apipinta keisčiausias gandais, legendomis, neįtikėtinomis istorijomis apie jos gyvenimą, meilę Žygimantui Augustui bei paslaptingą mirtį. Lenkų istorikas Zbigniew Kuchowicz penkių šimtų puslapių knygoje „Barbora Radvilaitė“ dalinasi savo provokuojančiu tyrimu apie legendinės asmenybės gyvenimą.
                 Barboros Radvilaitės vardu vadiname miestų gatves, apie šią moterį statomi filmai, spektakliai, rašomos knygos.
 
                 <br>
@@ -78,6 +82,7 @@
 
 </div>
 </div>
+
 
 
 

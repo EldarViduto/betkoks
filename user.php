@@ -30,7 +30,7 @@
             <ul class="col s4 collapsible">
                 <li>
                     <div class="collapsible-header"><i class="material-icons">announcement</i>Nauja žinutė</div>
-                    <div class="collapsible-body"><span>Nauja žinutė: Nuo vvv</span></div>
+                    <div class="collapsible-body"><span>Nauja žinutė: Jonas requested a book</span></div>
                 </li>
 
             </ul>
@@ -42,116 +42,43 @@
             <h5 class="col s8"> MANO KNYGOS </h5>
 
             <a href="newbook.php">
-            <button class="col s4">Pridėti naują knygą</button>
+                <button class="col s4">Pridėti naują knygą</button>
             </a>
         </div>
+        <div class="book-list row center-align">
+            <?php
 
-        <div class=" book-list row center-align">
+            $sql = "SELECT * FROM book_info";
 
-            <div class="col s3">
-                <img src="https://picsum.photos/seed/10/200/300" alt="">
-                <p>Knygos pavadinimas</p>
-                <p>Knygos statusas: aktyvi</p>
+            $result = $conn->query($sql);
 
-                <!-- Switch -->
-                <div class="switch">
+            if ($result->num_rows > 0) {
+                // output data of each row
+                while ($row = $result->fetch_assoc()) {
+                    echo '<div class="col s3">';
+                    echo '<a href="book.php"><img class="responsive-img aukstis" src="' . $row["book_img"] . '" alt=""></a>';
+                    echo '<p>' . $row["book_name"] . '</p>';
+                    echo '<p> Knygos statusas:' . $row["book_status"] . '</p>';
+                    echo '<div class="switch">
                     <label>
                         off
-                        <input type="checkbox" checked>
-                        <span class="lever"></span>
+                       <input type="checkbox" checked>
+                       <span class="lever"></span>
                         on
-                    </label>
-                </div>
+                   </label>
+                    </div> ';
 
-                    <button>Išsiųsti knygą</button>
-              
-            </div>
-            <div class="col s3">
-                <img src="https://picsum.photos/seed/11/200/300" alt="">
-                <p>Knygos pavadinimas</p>
-                <p>Knygos statusas</p>
-                <!-- Switch -->
-                <div class="switch">
-                    <label>
-                        off
-                        <input type="checkbox" checked>
-                        <span class="lever"></span>
-                        on
-                    </label>
-                </div>
+                    echo '<button>Išsiųsti knygą</button></a>';
+                    echo '</div>';
+                }
+            } else {
+                echo "0 results";
+            }
+            $conn->close();
 
-
-                <button>Išsiųsti knygą</button>
-            </div>
-            <div class="col s3">
-                <img src="https://picsum.photos/seed/12/200/300" alt="">
-                <p>Knygos pavadinimas</p>
-                <p>Knygos statusas</p>
-
-                <!-- Switch -->
-                <div class="switch">
-                    <label>
-                        off
-                        <input type="checkbox" checked>
-                        <span class="lever"></span>
-                        on
-                    </label>
-                </div>
-
-                <button>Išsiųsti knygą</button>
-
-            </div>
-            <div class="col s3">
-                <img src="https://picsum.photos/seed/18/200/300" alt="">
-                <p>Knygos pavadinimas</p>
-                <p>Knygos statusas</p>
-                <!-- Switch -->
-                <div class="switch">
-                    <label>
-                        off
-                        <input type="checkbox" checked>
-                        <span class="lever"></span>
-                        on
-                    </label>
-                </div>
-
-                <button>Išsiųsti knygą</button>
-            </div>
-            <div class="col s3">
-                <img src="https://picsum.photos/seed/19/200/300" alt="">
-                <p>Knygos pavadinimas</p>
-                <p>Knygos statusas</p>
-
-                <!-- Switch -->
-                <div class="switch">
-                    <label>
-                        off
-                        <input type="checkbox" checked>
-                        <span class="lever"></span>
-                        on
-                    </label>
-                </div>
-                <button>Išsiųsti knygą</button>
-            </div>
-            <div class="col s3">
-                <img src="https://picsum.photos/seed/20/200/300" alt="">
-                <p>Knygos pavadinimas</p>
-                <p>Knygos statusas</p>
-                <!-- Switch -->
-                <div class="switch">
-                    <label>
-                        off
-                        <input type="checkbox" checked>
-                        <span class="lever"></span>
-                        on
-                    </label>
-                </div>
-                <button>Išsiųsti knygą</button>
-            </div>
-
+            ?>
 
         </div>
-
     </div>
 </div>
 

@@ -10,6 +10,17 @@
             <img src="images/9786094840869.jpg" width="200" height="290">
         </div>
         <div class="bookinfo col s12 m4  center-align">
+
+        <?php 
+        if (isset($_GET["id"]) && $_GET["id"] != "")
+
+        $id = $_GET["id"];
+
+
+        $sql = "SELECT * FROM book_info WHERE id=$id";
+
+        ?>
+
             <P>
                 <font size="4">Knygos autorius <font>
             </P>

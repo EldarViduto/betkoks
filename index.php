@@ -54,7 +54,7 @@
           echo '<div class="col s3">';
           echo '<a href="book.php"><img class="responsive-img aukstis" src="' . $row["book_img"] . '" alt=""></a>';
           echo '<p>' . $row["book_name"] . '</p>';
-          echo '<a href="book.php"><button>NORIU!</button></a>';
+          echo '<a href="book.php?id=' . $row["id"] . '"><button>NORIU!</button></a>';
           echo '</div>';
         }
       } else {

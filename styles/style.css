@@ -15,7 +15,9 @@
   margin-top: 30px;
   margin-bottom: 10px;
 }
-
+img.paveiksliukas{
+height: 150;
+}
 
 /* Jurga stiliaus kodas: */
 div.vspace{

@@ -6,17 +6,19 @@
 <div class="container">
     <h3 class="col s4">Vartotojo profilis</h3>
 
-    <div class="row ">
-        <div class="col s4">
-            <i class="left-align black-text large material-icons">account_circle</i>
-        </div>
-
+<div>
+     <img src="" alt="">
         <?php
+
 
         $sql = "SELECT * FROM user_info WHERE id=1";
         $result = $conn->query($sql);
 
         while ($row = $result->fetch_assoc()) {
+            echo '<div class="row ">';
+            echo '<div class="col s4">';
+                echo '<img class= "paveiksliukas" src="' . $row["user_img"] .'" alt="">';
+            echo ' </div>';
             echo '<div class="col s4">';
             echo '<p class= "flow-text"> VARDAS: ' . $row["user_name"] . '</p>';
             echo '<p class= "flow-text"> PAVARDĖ: ' . $row["user_surname"] . '</p>';
@@ -36,7 +38,7 @@
             </ul>
         </div>
 
-
+        </div>
 
         <div class="row">
             <h5 class="col s8"> MANO KNYGOS </h5>

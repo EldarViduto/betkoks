@@ -26,30 +26,30 @@
 
     ?>
 
-    <h1>Naujo vartotojo registracija</h1>
+    <h1>Naujos knygos registravimas</h1>
 
     <form class="col s12">
 
         <div class="row">
             <div class="input-field col s6">
-                <input placeholder="Book name" id="book-name" type="text" class="validate" name="name">
+                <input id="book-name" type="text" class="validate" name="name">
                 <label for="book-name">Book name</label>
             </div>
             <div class="input-field col s6">
-                <input placeholder="Pavardė" id="Pavardė" type="text" class="validate" name="surname">
-                <label for="Pavardė">Pavardė</label>
+                <input id="book-author" type="text" class="validate" name="author">
+                <label for="book-author">Book author</label>
             </div>
         </div>
 
         <div class="row">
             <div class="input-field col s6">
-                <input id="email" type="email" class="validate" name="email">
-                <label for="email">El. paštas</label>
+                <input id="book-img" type="text" class="validate" name="img">
+                <label for="book-img">Book image</label>
             </div>
 
             <div class="input-field col s6">
-                <input id="password" type="password" class="validate" name="password">
-                <label for="password">Slaptažodis</label>
+                <input id="book-genre" type="text" class="validate" name="genre">
+                <label for="book-genre">Book genre</label>
             </div>
         </div>
 

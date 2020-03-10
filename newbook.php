@@ -8,22 +8,24 @@
     if (isset($_GET["name"]) && $_GET["name"] != "") {
 
         $name = $_GET["name"];
-        $surname = $_GET["surname"];
-        $email = $_GET["email"];
-        $password = $_GET["password"];
+        $author = $_GET["author"];
+        $img = $_GET["img"];
+        $genre = $_GET["genre"];
+        $description = $_GET["description"];
+        $info = $_GET["info"];
 
 
-        $sql = "INSERT INTO user_info (user_name, user_surname, user_email, user_password)
-        VALUES ('$name', '$surname', '$email', '$password')";
+        $sql = "INSERT INTO book_info (book_name, book_author, book_img, book_genre, book_description, book_short_info)
+        VALUES ('$name', '$author', '$img', '$genre', '$description', '$info')";
 
 
         if ($conn->query($sql) === true) {
-            header("Location: register.php?status=success");
+            header("Location: newbook.php?status=success");
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
+        
     }
-
     ?>
 
     <h1>Naujos knygos registravimas</h1>
@@ -54,25 +56,21 @@
         </div>
 
         <div class="row">
-            <form class="col s12">
-                <div class="row">
+            
                     <div class="input-field col s12">
-                        <textarea id="book-description" class="materialize-textarea"></textarea>
+                        <textarea id="book-description" class="materialize-textarea" name="description"></textarea>
                         <label for="book-description">Book description</label>
                     </div>
-                </div>
-            </form>
+
         </div>
 
         <div class="row">
-            <form class="col s12">
-                <div class="row">
+
                     <div class="input-field col s12">
-                        <textarea id="short-info" class="materialize-textarea"></textarea>
-                        <label for="short-info">Short info</label>
+                        <textarea id="short-info" class="materialize-textarea" name="info"></textarea>
+                        <label for="short-info">Short</label>
                     </div>
-                </div>
-            </form>
+
         </div>
 
         <!-- <div class="row">

@@ -1,0 +1,114 @@
+<?php include "header.php" ?>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<div class="left-align container vspace ">
+
+    <div class="row">
+        <div class="col s12 m4 left-align">
+            <!-- <img src="images/9786094840869.jpg" width="200" height="290">
+        </div>
+        <div class="bookinfo col s12 m4  center-align"> -->
+
+            <?php
+            if (isset($_GET["id"]) && $_GET["id"] != "")
+
+                $id = $_GET["id"];
+
+
+            $sql = "SELECT * FROM book_info WHERE id=$id";
+            $result = $conn->query($sql);
+
+            while ($row = $result->fetch_assoc()) {
+                echo '<img src="' . $row["book_img"] . '" width="200" height="290">';
+                echo '</div>';
+                echo '<div class="bookinfo col s12 m4  center-align">';
+                echo '<p><font size="4">Knygos autorius<font></p>';
+                echo '<p><font size="5">' . $row["book_author"] . '<font></p>';
+                echo '<p><font size="3">Leidėjas: ' . $row["book_short_info"] . '<font></p>';
+            }
+
+            ?>
+
+            <!-- <P>
+                <font size="4">Knygos autorius <font>
+            </P>
+            <P>
+                <font size="5">Barbora Radvilaite<font>
+            </P>
+            <p>
+                <font size="3"> Leidėjas: Obuolys <br>Išleidimo metai: 2020<br>Puslapių skaičius: 464 <font>
+            </p> -->
+
+
+
+        </div>
+
+        <div class="col s12 m4 center-align">
+
+            <button class="btn waves-effect waves-light" type="NORIU" name="action">NORIU
+                <i class="material-icons right">send</i>
+            </button>
+            <div class="vertinimas">
+                <P class="feedback">Įvertinkite knygą</P>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+
+                <br>
+            </div>
+
+
+
+            <a href="tekstai/BarboraRadvilaite.pdf">Skaitykite ištrauką</a>
+        </div>
+    </div>
+
+    <?php
+    if (isset($_GET["id"]) && $_GET["id"] != "")
+
+        $id = $_GET["id"];
+
+
+    $sql = "SELECT * FROM book_info WHERE id=$id";
+    $result = $conn->query($sql);
+
+    while ($row = $result->fetch_assoc()) {
+        echo '<h5 class="book_des">Aprašymas</h5>';
+        echo '<div class="left-align">';
+        echo '<p><font size="3">' . $row["book_description"] . '</font></p>';
+        echo '</div>';
+    }
+
+    ?>
+
+    <!-- <h5 class="book_des">Aprašymas</h5>
+
+
+    <div class="left-align">
+
+        <p>
+            <font size="3">Turbūt visi sutinka, kad pati žymiausia visų laikų lietuvė yra Barbora Radvilaitė. Nuo jos gimimo dienos praėjo jau penki šimtai metų, o moters asmenybė vis dar nepamiršta. Priešingai – Barbora apipinta keisčiausias gandais, legendomis, neįtikėtinomis istorijomis apie jos gyvenimą, meilę Žygimantui Augustui bei paslaptingą mirtį. Lenkų istorikas Zbigniew Kuchowicz penkių šimtų puslapių knygoje „Barbora Radvilaitė“ dalinasi savo provokuojančiu tyrimu apie legendinės asmenybės gyvenimą.
+                Barboros Radvilaitės vardu vadiname miestų gatves, apie šią moterį statomi filmai, spektakliai, rašomos knygos.
+
+                <br>
+                Iš lenkų kalbos vertė Romualdas Petraitis
+            </font>
+        </p>
+
+    </div> -->
+
+</div>
+</div>
+
+
+
+
+
+
+
+<?php include "footer.php" ?>

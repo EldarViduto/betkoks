@@ -1,6 +1,6 @@
     <!-- Čia pasikartojanti visuose puslapiuose apatinė dalis -->
-        <footer class="page-footer container">
-            <div class="container teal lighten-4">
+        <footer class="page-footer container teal lighten-4">
+            <div class="container">
                 <div class="row">
                     <div class="col l6 s12">
                         <h5 class="white-text">Apie SKAITYK.lt</h5>

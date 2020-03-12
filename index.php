@@ -3,20 +3,24 @@
 <main class="container">
 
   <div class="row">
-    <h2 class="col s6">RENT YOUR BOOK</h2>
-    <div class="input-field col s2 right">
-      <input id="first_name" type="text" class="validate">
-      <label for="first_name">Password</label>
-    </div>
-    <div class="input-field col s2 right">
-      <input id="last_name" type="text" class="validate">
-      <label for="last_name">Name</label>
-    </div class="cols2 right">
-    <br><br><br><br>
-    <div class="right">
-      <a href="register.php">Register</a>
-      <button class="btn">LOGIN</button>
-    </div>
+    <form class="col s12" action="user.php" method="post">
+      <div class="row">
+        <h2 class="col s6">RENT YOUR BOOK</h2>
+        <div class="input-field col s2 right">
+          <input id="password" type="password" class="validate" name="password">
+          <label for="password">Password</label>
+        </div>
+        <div class="input-field col s2 right">
+          <input id="username" type="text" class="validate" name="username">
+          <label for="username">Name</label>
+        </div class="cols2 right">
+        <br><br><br><br>
+        <div class="right">
+          <a href="register.php">Register</a>
+          <button class="btn" type="submit" name="login">LOGIN</button>
+        </div>
+      </div>
+    </form>
   </div>
 
   <div class="row">
@@ -32,7 +36,7 @@
         if ($result->num_rows > 0) {
           // output data of each row
           while ($row = $result->fetch_assoc()) {
-            echo '<li><a href="#">' . $row["book_genre"] . '</a></li>';
+            echo '<li><a href="index.php?book_genre=' . $row["book_genre"] . '">' . $row["book_genre"] . '</a></li>';
           }
         } else {
           echo "0 results";
@@ -52,7 +56,7 @@
         // output data of each row
         while ($row = $result->fetch_assoc()) {
           echo '<div class="col s3">';
-          echo '<a href="book.php"><img class="responsive-img aukstis" src="' . $row["book_img"] . '" alt=""></a>';
+          echo '<a href="book.php?id=' . $row["id"] . '"><img class="responsive-img aukstis" src="' . $row["book_img"] . '" alt=""></a>';
           echo '<p>' . $row["book_name"] . '</p>';
           echo '<a href="book.php?id=' . $row["id"] . '"><button>NORIU!</button></a>';
           echo '</div>';

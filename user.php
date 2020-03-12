@@ -10,8 +10,8 @@
      <img src="" alt="">
         <?php
 
-
-        $sql = "SELECT * FROM user_info WHERE id=1";
+        //print_r($_SESSION);
+        $sql = "SELECT * FROM user_info WHERE id={$_SESSION['id']}";
         $result = $conn->query($sql);
 
         while ($row = $result->fetch_assoc()) {

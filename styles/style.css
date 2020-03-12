@@ -26,11 +26,13 @@ div.vspace{
   padding-bottom: 25px;
 }
 div.bookinfo{
+  padding-left:  300px;
   font-weight: bold;
  border-style: double; 
  border-color: black;
  background-color: cornsilk;
  padding-bottom: 25px;
+ 
 }
 .book_des {font-weight: bold;}
 
@@ -45,6 +47,11 @@ div.vertinimas {
   padding-bottom: 50px;
 }
 
+img.image{
+width: 500px
+height 700px;
+
+}
 /* Gediminas stiliaus kodas: */
 
 /* .foto  {

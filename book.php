@@ -5,87 +5,87 @@
 
 <div class="left-align container vspace ">
 
-    <div class="row">
-        <div class="col s12 m4 left-align">
-            <img src="images/9786094840869.jpg" width="200" height="290">
-        </div>
-        <div class="bookinfo col s12 m4  center-align">
-
-        <?php 
-        if (isset($_GET["id"]) && $_GET["id"] != "")
+    <?php
+    if (isset($_GET["id"]) && $_GET["id"] != "") {
 
         $id = $_GET["id"];
 
-
         $sql = "SELECT * FROM book_info WHERE id=$id";
+        $result = $conn->query($sql);
 
-        ?>
+        if (mysqli_num_rows($result) > 0) {
 
-            <P>
-                <font size="4">Knygos autorius <font>
-            </P>
-            <P>
-                <font size="5">Barbora Radvilaite<font>
-            </P>
-            <p>
-                <font size="3"> Leidėjas: Obuolys <br>Išleidimo metai: 2020<br>Puslapių skaičius: 464 <font>
-            </p>
+            $row = $result->fetch_assoc();
 
 
+            echo '<div class="row">';
+            echo '<div class="col s12 m4 left-align">';
+            echo '<img class="responsive-img aukstis" src="' . $row["book_img"] . '" alt="">';
+            echo '</div>';
+            echo '<div class="bookinfo col s12 m4  center-align">';
+            echo '<p>';
+            echo ' <font size="4">' . $row["book_author"] . '<font>';
+            echo '   </p>';
 
-        </div>
+            echo ' <P>';
+            echo '  <font size="5">' . $row["book_name"] . '<font>';
+            echo '    </p>';
 
-        <div class="col s12 m4 center-align">
+            echo '     <p>';
+            echo '     <font size="3 align left">' . $row["book_short_info"] . '<font>';
+            echo '</p>';
 
-            <button class="btn waves-effect waves-light" type="NORIU" name="action">NORIU
-                <i class="material-icons right">send</i>
-            </button>
-            <div class="vertinimas" >
-            <P class="feedback">Įvertinkite knygą</P>
+            echo '</div>';
+            echo '<div class="col s12 m4 center-align">';
 
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
+            echo '<button class="btn waves-effect waves-light" type="NORIU" name="action">NORIU';
+            echo '   <i class="material-icons right">send</i>';
+            echo ' </button>';
+            echo '<div class="vertinimas">';
+            echo '  <P class="feedback">Įvertinkite knygą</P>';
 
-            <br>
-            </div>
+            echo '  <span class="fa fa-star checked" onmouseover="starmark (this)" onclick=""starmark (this) id="1one"></span>';
+            echo ' <span class="fa fa-star checked" onmouseover="starmark (this)" onclick=""starmark (this) id="2one"></span>';
+            echo '  <span class="fa fa-star checked" onmouseover="starmark (this)" onclick=""starmark (this) id="3one"></span>';
+            echo ' <span class="fa fa-star checked" onmouseover="starmark (this)" onclick=""starmark (this) id="4one"></span>';
+            echo ' <span class="fa fa-star checked" onmouseover="starmark (this)" onclick=""starmark (this) id="5one"></span>';
+            
+            echo '<br>';
+           
+echo'</div>';
+            echo '</div>';
+            echo '</div>';
+            echo ' <h5 class="book_des">Aprašymas</h5>';
+            echo '<div class="left-align">';
+            echo    '<p>';
+            echo '     <font size="3">' . $row["book_description"] . '</font>';
 
-            <a href="tekstai/BarboraRadvilaite.pdf">Skaitykite ištrauką</a>
-        </div>
-    </div>
+            echo '    </p>';
+
+            echo '  </div>';
+        }
+    } else {
+        echo "0 results";
+    }
+    $conn->close()
 
 
 
 
 
-
-    <h5 class="book_des">Aprašymas</h5>
-
-
-    <div class="left-align">
+    ?>
 
 
 
 
-        <p>
-            <font size="3">Turbūt visi sutinka, kad pati žymiausia visų laikų lietuvė yra Barbora Radvilaitė. Nuo jos gimimo dienos praėjo jau penki šimtai metų, o moters asmenybė vis dar nepamiršta. Priešingai – Barbora apipinta keisčiausias gandais, legendomis, neįtikėtinomis istorijomis apie jos gyvenimą, meilę Žygimantui Augustui bei paslaptingą mirtį. Lenkų istorikas Zbigniew Kuchowicz penkių šimtų puslapių knygoje „Barbora Radvilaitė“ dalinasi savo provokuojančiu tyrimu apie legendinės asmenybės gyvenimą.
-                Barboros Radvilaitės vardu vadiname miestų gatves, apie šią moterį statomi filmai, spektakliai, rašomos knygos.
 
-                <br>
-                Iš lenkų kalbos vertė Romualdas Petraitis
-            </font>
-        </p>
-
-    </div>
 
 </div>
+
+
+
+
 </div>
-
-
-
-
 
 
 

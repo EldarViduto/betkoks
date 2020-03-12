@@ -47,8 +47,13 @@
 
     <div class="row center-align">
       <?php
-
-      $sql = "SELECT * FROM book_info";
+      if(isset($_GET['book_genre'])) {
+        $sql = "SELECT * FROM book_info WHERE book_genre='{$_GET['book_genre']}'";
+      }
+      else {
+        $sql = "SELECT * FROM book_info";
+      }
+      
 
       $result = $conn->query($sql);
 

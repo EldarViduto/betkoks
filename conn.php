@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 $servername = "localhost";
 $username = "root";
@@ -26,7 +27,7 @@ if(empty($username) or empty($password)) {
     $row=mysqli_fetch_assoc($result);
   
     if (mysqli_num_rows($result) == 1) {
-        session_start();
+        
 
         $_SESSION['user_name'] = $username;
         $_SESSION['id'] = $row['id'];

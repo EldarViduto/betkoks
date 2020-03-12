@@ -24,23 +24,23 @@ include "conn.php";
   <nav class="container">
     <a href="index.php" class="brand-logo">Logo</a>
     <ul class="right hide-on-med-and-down">
-      <li><a href="user.php?id=<?php echo $row['id'] ?>"><i class="material-icons right">account_box</i>Guest</a></li>
-      <!-- <?php
+      <!-- <li><a href="user.php?id=<?php echo $row['id'] ?>"><i class="material-icons right">account_box</i>Guest</a></li> -->
+      <?php
       $sql = "SELECT * FROM user_info WHERE id={$_SESSION['id']}";
 
       $result = $conn->query($sql);
 
 
-      echo '<li><a href="user.php?id=' . $_SESSION['id'] . '"><i class="material-icons right">account_box</i>Guest</a></li>';
+      echo '<li><a href="user.php?id=' . $_SESSION['id'] . '"><i class="material-icons right">account_box</i>' . $_SESSION['user_name'] . '</a></li>';
 
 
-      ?> -->
+      ?>
 
     </ul>
     <div class="nav-wrapper container">
       <form>
         <div class="input-field">
-          <input id="search" type="search" required placeholder="Iveskite knygos pavadinima">
+          <input id="search" type="search" required placeholder="Iveskite knygos pavadinima" name="search">
           <label class="label-icon" for="search"><i class="material-icons">search</i></label>
           <i class="material-icons">close</i>
 

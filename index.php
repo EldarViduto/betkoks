@@ -48,7 +48,10 @@
     <div class="row center-align">
       <?php
       if(isset($_GET['book_genre'])) {
-        $sql = "SELECT * FROM book_info WHERE book_genre='{$_GET['book_genre']}'";
+      $sql = "SELECT * FROM book_info WHERE book_genre='{$_GET['book_genre']}'";
+      }
+      else if (isset($_GET['search'])) {
+        $sql = "SELECT * FROM book_info WHERE book_name LIKE '%{$_GET['search']}%'";
       }
       else {
         $sql = "SELECT * FROM book_info";

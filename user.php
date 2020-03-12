@@ -14,6 +14,8 @@
         $sql = "SELECT * FROM user_info WHERE id={$_SESSION['id']}";
         $result = $conn->query($sql);
 
+        
+
         while ($row = $result->fetch_assoc()) {
             echo '<div class="row ">';
             echo '<div class="col s4">';

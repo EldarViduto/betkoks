@@ -21,7 +21,7 @@ include "conn.php";
 
 <body>
 
-  <nav class="container">
+  <nav class="container teal lighten-4" >
     <a href="index.php" class="brand-logo">SKAITYK.lt</a>
     <ul class="right hide-on-med-and-down">
       <li><a href="user.php?id=<?php echo $row['id'] ?>"><i class="material-icons right">account_box</i>Guest</a></li>

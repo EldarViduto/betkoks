@@ -56,9 +56,9 @@
         // output data of each row
         while ($row = $result->fetch_assoc()) {
           echo '<div class="col s3">';
-          echo '<a href="book2.php?id=' . $row["id"] . '"><img class="responsive-img aukstis" src="' . $row["book_img"] . '" alt=""></a>';
+          echo '<a href="book.php?id=' . $row["id"] . '"><img class="responsive-img aukstis" src="' . $row["book_img"] . '" alt=""></a>';
           echo '<p>' . $row["book_name"] . '</p>';
-          echo '<a href="book2.php?id=' . $row["id"] . '"><button>NORIU!</button></a>';
+          echo '<a href="book.php?id=' . $row["id"] . '"><button>NORIU!</button></a>';
           echo '</div>';
         }
       } else {

@@ -24,7 +24,18 @@ include "conn.php";
   <nav class="container">
     <a href="index.php" class="brand-logo">Logo</a>
     <ul class="right hide-on-med-and-down">
-      <li><a href="user.php"><i class="material-icons right">account_box</i>Your name</a></li>
+      <li><a href="user.php?id=<?php echo $row['id'] ?>"><i class="material-icons right">account_box</i>Guest</a></li>
+      <!-- <?php
+      $sql = "SELECT * FROM user_info WHERE id={$_SESSION['id']}";
+
+      $result = $conn->query($sql);
+
+
+      echo '<li><a href="user.php?id=' . $_SESSION['id'] . '"><i class="material-icons right">account_box</i>Guest</a></li>';
+
+
+      ?> -->
+
     </ul>
     <div class="nav-wrapper container">
       <form>
